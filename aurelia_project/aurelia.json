@@ -132,6 +132,13 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
+          },
+          {
+            "name": "bulma",
+            "path": "../node_modules/bulma",
+            "resources": [
+              "css/bulma.css"
+            ]
           }
         ]
       }
