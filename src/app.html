@@ -1,6 +1,11 @@
 <template>
+  <require from="resources/elements/nav-bar/nav-bar.html"></require>
   <require from="bulma/css/bulma.css"></require>
   <require from="./app.css"></require>
-  <h1 class="title">${message}</h1>
-  <button id="specific" class="button is-primary" type="submit">Hello</button>
+
+  <nav-bar router.bind="router"></nav-bar>
+
+  <div class="page-host">
+    <router-view></router-view>
+  </div>
 </template>

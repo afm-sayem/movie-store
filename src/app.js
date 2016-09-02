@@ -1,5 +1,23 @@
 export class App {
-  constructor() {
-    this.message = 'Hello World!';
+  configureRouter(config, router) {
+    config.title = 'Movie Store';
+    config.map([
+      {
+        route: '',
+        name: 'home',
+        moduleId: 'home/home',
+        nav: true,
+        title: 'Home'
+      },
+      {
+        route: 'movies',
+        name: 'movie',
+        moduleId: 'movie/movie',
+        nav: true,
+        title: 'Movie'
+      }
+    ]);
+
+    this.router = router;
   }
 }
