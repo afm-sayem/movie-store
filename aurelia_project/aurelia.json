@@ -89,7 +89,8 @@
         "name": "vendor-bundle.js",
         "prepend": [
           "node_modules/bluebird/js/browser/bluebird.core.js",
-          "node_modules/requirejs/require.js"
+          "node_modules/requirejs/require.js",
+          "node_modules/whatwg-fetch/fetch.js"
         ],
         "dependencies": [
           "aurelia-binding",
@@ -97,6 +98,7 @@
           "aurelia-dependency-injection",
           "aurelia-event-aggregator",
           "aurelia-framework",
+          "aurelia-fetch-client",
           "aurelia-history",
           "aurelia-history-browser",
           "aurelia-loader",
@@ -132,13 +134,6 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
-          },
-          {
-            "name": "bulma",
-            "path": "../node_modules/bulma",
-            "resources": [
-              "css/bulma.css"
-            ]
           }
         ]
       }

@@ -13,7 +13,8 @@
     "aurelia-fetch-client": "^1.0.0",
     "bluebird": "^3.4.1",
     "requirejs": "^2.2.0",
-    "requirejs-text": "^2.0.12"
+    "requirejs-text": "^2.0.12",
+    "whatwg-fetch": "^1.0.0"
   },
   "peerDependencies": {},
   "devDependencies": {
