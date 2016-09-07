@@ -5,14 +5,14 @@ export class App {
       {
         route: '',
         name: 'home',
-        moduleId: 'home/home',
+        moduleId: 'views/home/home',
         nav: true,
         title: 'Home'
       },
       {
         route: 'movies',
         name: 'movies',
-        moduleId: 'movie/movie',
+        moduleId: 'views/movie/movie',
         nav: true,
         title: 'Movie'
       }
