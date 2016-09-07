@@ -1,0 +1,10 @@
+<template>
+  <require from="./grid.css"></require>
+  <div class="grid-items-lines">
+    <a repeat.for="item of items" route-href="route: movies; params.bind: {id:item.id}" class="grid-item">
+      <img src.bind="item.poster" alt="${item.title}">
+      <h1>${item.title}</h1>
+      <p>${item.description}</p>
+    </a>
+  </div>
+</template>
