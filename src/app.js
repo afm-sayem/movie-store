@@ -11,7 +11,7 @@ export class App {
       },
       {
         route: 'movies',
-        name: 'movie',
+        name: 'movies',
         moduleId: 'movie/movie',
         nav: true,
         title: 'Movie'
