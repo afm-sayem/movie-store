@@ -135,6 +135,10 @@
             "path": "../node_modules/aurelia-testing/dist/amd",
             "main": "aurelia-testing",
             "env": "dev"
+          },
+          {
+            "name": "objection-find-query",
+            "path": "../node_modules/objection-find-query/index"
           }
         ]
       }

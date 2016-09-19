@@ -1,14 +1,11 @@
 import {inject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-fetch-client';
-// import 'fetch';
+import {format} from 'objection-find-query';
 
 @inject(HttpClient)
 export class MovieApi {
   constructor(http) {
-    this.http = new HttpClient()
-      .configure(x => {
-        x.withBaseUrl('http://localhost:3000/');
-      });
+    this.http = http;
   }
 
   getMovies(options) {
