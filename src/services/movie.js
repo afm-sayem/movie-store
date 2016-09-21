@@ -5,7 +5,7 @@ import {buildQueryString} from 'aurelia-path';
 import {EventAggregator} from 'aurelia-event-aggregator';
 
 @inject(HttpClient, EventAggregator)
-export class MovieApi {
+export class MovieStore {
   constructor(http, ea) {
     this.http = http;
     this.ea = ea;

@@ -1,18 +1,18 @@
 import {inject} from 'aurelia-framework';
-import {MovieApi} from '../../services/movie';
+import {MovieStore} from '../../services/movie';
 import {EventAggregator} from 'aurelia-event-aggregator';
 
-@inject(MovieApi, EventAggregator)
+@inject(MovieStore, EventAggregator)
 export class Movie {
-  constructor(movieApi, ea) {
-    this.movieApi = movieApi;
+  constructor(movieStore, ea) {
+    this.movieStore = movieStore;
     this.ea = ea;
   }
 
   activate() {
-    this.movieApi.setMovies();
+    this.movieStore.setMovies();
     this.ea.subscribe('movie:index', () => {
-      this.movies = this.movieApi.movies.results;
+      this.movies = this.movieStore.movies.results;
     });
   }
 }
