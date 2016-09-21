@@ -1,5 +1,5 @@
 import {inject} from 'aurelia-framework';
-import {MovieStore} from '../../services/movie';
+import {MovieStore} from '~/services/movie';
 import {EventAggregator} from 'aurelia-event-aggregator';
 
 @inject(MovieStore, EventAggregator)
