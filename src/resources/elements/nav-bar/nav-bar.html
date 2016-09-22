@@ -1,20 +1,13 @@
 <template>
   <require from="./nav-bar.css"></require>
-  <header class="centered-navigation" role="banner">
-    <div class="centered-navigation-wrapper">
-      <a href="javascript:void(0)" class="mobile-logo">
-        <img src="images/placeholder_square.png" alt="logo">
-      </a>
-      <a class="centered-navigation-mobile-menu" click.delegate="menuClick()">MENU</a>
-
-      <nav role="navigation">
-        <ul ref="menu" id="js-centered-navigation-menu" class="centered-navigation-menu show">
-          <li repeat.for="row of router.navigation" class="nav-link">
-            <a href.bind="row.href">${row.title}</a>
-          </li>
-          <li class="nav-link"><a href="signup">Join In!</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header role="banner">
+    <nav role="navigation">
+      <ul class="navigation" ref="menu" class="centered-navigation-menu">
+        <li repeat.for="row of router.navigation" class="nav-link">
+          <a href.bind="row.href">${row.title}</a>
+        </li>
+        <li class="nav-link"><a href="signup">Join In!</a></li>
+      </ul>
+    </nav>
   </header>
 </template>

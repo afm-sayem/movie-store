@@ -1,10 +1,11 @@
 <template>
   <require from="./grid.css"></require>
-  <div class="grid-items-lines">
-    <a repeat.for="item of items" route-href="route: movies; params.bind: {id:item.id}" class="grid-item">
+  <div class="flex-boxes">
+    <a repeat.for="item of items" route-href="route: movies; params.bind: {id:item.id}" class="flex-box">
       <img src.bind="item.poster" alt="${item.title}">
-      <h1>${item.title}</h1>
+      <h1 class="flex-title">${item.title}</h1>
       <p>${item.description}</p>
     </a>
   </div>
 </template>
+

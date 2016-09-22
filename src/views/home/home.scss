@@ -1,7 +1,7 @@
 @import "../../app";
 
 section {
-  @include outer-container;
-  header { @include span-columns(3); }
-  section { @include span-columns(9); }
+  @include grid-container;
+  header { @include grid-column(3); }
+  section { @include grid-column(9); }
 }
