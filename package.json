@@ -14,7 +14,7 @@
     "bluebird": "^3.4.1",
     "bourbon": "^5.0.0-beta.6",
     "bourbon-neat": "^2.0.0-beta.1",
-    "objection-find-query": "^0.1.0",
+    "objection-find-query": "^0.2.0",
     "requirejs": "^2.2.0",
     "requirejs-text": "^2.0.12",
     "whatwg-fetch": "^1.0.0"

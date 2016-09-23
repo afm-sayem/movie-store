@@ -11,7 +11,7 @@ export class Movie {
 
   activate() {
     this.movieStore.setMovies();
-    this.ea.subscribe('movie:index', () => {
+    this.ea.subscribe('movie:indexed', () => {
       this.movies = this.movieStore.movies.results;
     });
   }

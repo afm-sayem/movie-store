@@ -11,12 +11,17 @@ export class MovieStore {
     this.ea = ea;
   }
 
-  setMovies(options) {
-    return this.http.fetch('movies')
+  setMovies(filters) {
+    let query = 'movies';
+    if (filters) {
+      query = `${query}?${buildQueryString(format(filters, 'where'))}`;
+    }
+
+    return this.http.fetch(query)
       .then(response => response.json())
       .then(data => {
         this._movies = data;
-        this.ea.publish('movie:index');
+        this.ea.publish('movie:indexed');
       })
       .catch(error => {
         this._error = error;
